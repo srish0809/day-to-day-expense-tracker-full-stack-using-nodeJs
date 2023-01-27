@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER</title>
+  
+</head>
+<body>
+   
+    <fieldset>
+     <legend>   <h2 style="color:blueviolet">EXPENSE TRACKER</h2></legend>
+     
+    <form id="form" onclick="addItem(e)">
+        <label for="name"><b>Enter Your Name: </b></label>
+ <input type="text" id="name" name="name" ><br><br>
+ <label for="email"><b>Enter Your Email: </b></label>
+        <input type="email" id="email" name="email" ><br><br>
+        <label for="password"><b>Enter Your Password </b></label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="hidden" id="id" name="id" ><br><br>
+        <button type="submit"  >Sign Up</button> 
+       
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend> <h2 style="color:blueviolet">YOU MAY CHECK YOUR DETAILS FROM HERE!! </h2></legend>
+        <ul id="users"> 
+            </ul>
+           </fieldset>
+</body>
+
+<script src="script.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>   
+</html>
