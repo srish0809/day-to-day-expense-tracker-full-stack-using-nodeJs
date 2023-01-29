@@ -1,0 +1,19 @@
+
+body{
+  font-family: Arial;
+  background-image: url(https://time.com/nextadvisor/wp-content/uploads/2022/09/Chase-Savings-CD-Rates.png);
+}
+#nav{
+  padding:6px;
+  background-color:#46C4AF;
+}
+.header{
+  text-align:center;
+  padding:5px;
+}
+.column{
+float:right
+}
+
+
+

@@ -1,0 +1,30 @@
+you are premium user now print krwana h
+
+exports.signup=async(req,res)=>{
+    try{
+     const name=req.body.name;
+     const email=req.body.email;
+     const password=req.body.password;
+     
+
+     if(!email){
+        throw new Error('email is mandatory! ')
+     }
+    const saltrounds=10;
+    bcrypt.hash (password , saltrounds , async (err,hash)=>{
+      console.log(err);
+      const data= await User.create({
+         name:name,
+         email:email,
+         password:hash
+    })
+   // console.log(data);
+    res.status(201).json({message:"Successfully New User Created!!"})
+   })
+    }
+    catch(error){
+        console.log(error);
+       res.status(500).json({error:error})
+    }
+}
+
